@@ -1,5 +1,5 @@
 <template>
-  <div class="work">work</div>
+  <div class="ttt">hi</div>
 </template>
 
 <script>
@@ -7,7 +7,7 @@ export default {};
 </script>
 
 <style>
-.work {
-  height: 200vh;
+.ttt {
+  height: 150vh;
 }
 </style>

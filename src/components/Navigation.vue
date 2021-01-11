@@ -28,9 +28,14 @@
       </v-list>
     </v-navigation-drawer>
 
-    <v-app-bar app color="#fff px-15" :flat="flat" :class="{ expand: flat }">
+    <v-app-bar
+      app
+      color="#fff"
+      :flat="flat"
+      :class="{ expand: flat, 'px-15': $vuetify.breakpoint.mdAndUp }"
+    >
       <v-toolbar-title>
-        <span>KBR3.The Creator!</span>
+        <span class="font-weight-medium">KBR3.The Creator!</span>
       </v-toolbar-title>
       <v-spacer />
       <v-app-bar-nav-icon @click.stop="drawer = !drawer" v-if="isXs" />
@@ -89,7 +94,8 @@ export default {
 </script>
 
 <style scoped>
-.v-toolbar {
+.v-toolbar,
+.v-navigation-drawer {
   transition: 0.6s;
 }
 .expand {
